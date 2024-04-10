@@ -1,0 +1,34 @@
+----> Para verificar que se hayan asignado correctamente las direcciones IP a las interfaces NIC de los PCs, se puede utilizar el comando:
+
+ipconfig /all
+
+Este comando muestra información detallada sobre la configuración de red del PC, incluyendo las direcciones IP asignadas a cada interfaz de red.
+
+
+
+
+----> Para verificar que las VLANs se hayan creado y configurado correctamente en los switches Cisco, se puede utilizar el siguiente comando:
+
+show vlan brief
+
+Este comando muestra un resumen de todas las VLANs configuradas en el switch, incluyendo el nombre de la VLAN, su estado e interfaces asociadas.
+
+
+
+----> Para verificar la conectividad entre PCs de la misma VLAN, se pueden utilizar los siguientes comandos TCP/IP:
+
+1. ping [dirección IP destino]
+2. tracert [dirección IP destino]
+
+En esta etapa, los PCs no tendrán conectividad con su puerta de enlace (gateway) porque aún no se ha configurado el enrutamiento entre las VLAN en el router R1.
+No existirá conectividad entre PCs pertenecientes a VLAN distintas porque las VLAN actúan como dominios de broadcast separados a nivel de capa 2. 
+
+
+
+
+----> Para verificar que sea posible hacer Telnet desde un PC a los switches y al router R1, se debe utilizar el siguiente comando TCP/IP:
+
+telnet [dirección IP destino]
+
+Donde [dirección IP destino] es la dirección IP de la interfaz de administración del dispositivo al que se quiere acceder por Telnet.
+
